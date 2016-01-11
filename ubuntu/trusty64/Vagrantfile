@@ -9,6 +9,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.provider "virtualbox" do |vb|
     vb.memory = "1024"
+    v.cpus    = 3
   end
 
   # fix for 'default: stdin is not a tty' error
